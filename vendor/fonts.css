@@ -2,4 +2,12 @@
   /* regular font */
   font-family: "Work Sans";
   src: url(fonts/static/WorkSans-Regular.ttf) format("ttf");
+  font-style: normal;
+}
+
+@font-face {
+    /* bold font */
+    font-family: "Work Sans";
+    src: url(fonts/static/WorkSans-Bold.ttf) format("ttf");
+    font-weight: bold;
 }
