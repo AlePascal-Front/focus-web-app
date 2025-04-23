@@ -3,6 +3,7 @@
   min-width: calc(100% - 1/2);
   margin: 0 auto;
   padding: 0;
+  box-sizing: content-box;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-size: 1rem;
