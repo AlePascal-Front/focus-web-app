@@ -14,20 +14,32 @@
             <li class="navigation-bar__list-item">
               <img src="#" alt="some logo here" class="navigation-bar__logo" />
               <!-- main page when first visiting. No need to be logged -->
-              <a href="#" class="navigation-bar__nav-link navigation-bar__nav-link_visited">Quick session</a>
+              <a
+                href="#"
+                class="navigation-bar__nav-link navigation-bar__nav-link_visited"
+                >Quick session</a
+              >
 
               <!-- heavy use of user singing up and logging. Provides more customization -->
-              <a href="#" class="navigation-bar__nav-link navigation-bar__nav-link_visited"
+              <a
+                href="#"
+                class="navigation-bar__nav-link navigation-bar__nav-link_visited"
                 >Personalized session</a
               >
 
               <!-- article-like page with neat tips to enhance overall experience -->
-              <a href="#" class="navigation-bar__nav-link navigation-bar__nav-link_visited"
+              <a
+                href="#"
+                class="navigation-bar__nav-link navigation-bar__nav-link_visited"
                 >Tips to maximize productivity</a
               >
 
               <!-- simple about page -->
-              <a href="" class="navigation-bar__nav-link navigation-bar__nav-link_visited">About ZenSession</a>
+              <a
+                href=""
+                class="navigation-bar__nav-link navigation-bar__nav-link_visited"
+                >About ZenSession</a
+              >
             </li>
           </ul>
         </nav>
@@ -38,6 +50,28 @@
             <p class="header__slogan">
               Running meaningful focus sessions was never this easy.
             </p>
+            <div class="timer">
+              <!-- reminder to make use of pseudo-elements through before and after to create arrow buttons -->
+              <!-- whether the user surpass a full hour, create a div to wrap hours -->
+              <div class="timer__minutes">
+                <!-- minutes here. Make use of Date object -->
+              </div>
+              <div class="timer__seconds">
+                <!-- seconds here. Make use of Date object -->
+              </div>
+
+              <!-- if timer is empty (mm and ss equal to 0) then disable button -->
+              <button class="timer__start-button">START TIMER</button>
+
+              <!-- have the instructions be hidden and just have the heading be visibible -->
+              <!-- dinamically change text to "How to use the timer..." -->
+              <h2 class="timer__instructions-heading">Click me to know how to use the timer!</h2>
+              <ol class="timer__instructions-list">
+                <li class="timer__instruction">Type the desired time with the keyboard or use the arrow buttons.</li>
+                <li class="timer__instruction">Click "START TIMER" to start the session.</li>
+                <li class="timer__instruction">Whenever needed, you can add +5 minutes during session.</li>
+              </ol>
+            </div>
           </div>
         </header>
       </div>
