@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Focus Web App</title>
+    <title>ZenSession - Quick Session</title>
   </head>
   <body>
     <main>
       <div class="page">
+        <nav class="navigation-bar">
+          <ul class="navigation-bar__list">
+            <li class="navigation-bar__list-item">
+              <img src="#" alt="some logo here" class="navigation-bar__logo" />
+              <!-- main page when first visiting. No need to be logged -->
+              <a href="#" class="navigation-bar__nav-link navigation-bar__nav-link_visited">Quick session</a>
+
+              <!-- heavy use of user singing up and logging. Provides more customization -->
+              <a href="#" class="navigation-bar__nav-link navigation-bar__nav-link_visited"
+                >Personalized session</a
+              >
+
+              <!-- article-like page with neat tips to enhance overall experience -->
+              <a href="#" class="navigation-bar__nav-link navigation-bar__nav-link_visited"
+                >Tips to maximize productivity</a
+              >
+
+              <!-- simple about page -->
+              <a href="" class="navigation-bar__nav-link navigation-bar__nav-link_visited">About ZenSession</a>
+            </li>
+          </ul>
+        </nav>
         <header class="header">
           <div class="header__content">
             <!-- header positioned at top of the page, horizontally at the center -->
