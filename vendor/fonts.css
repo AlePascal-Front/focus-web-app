@@ -1,28 +1,28 @@
 @font-face {
   /* regular font */
   font-family: "Work Sans";
-  src: url(fonts/static/WorkSans-Regular.ttf) format("ttf");
+  src: url(fonts/static/WorkSans-Regular.ttf) format("truetype");
   font-style: normal;
 }
 
 @font-face {
     /* bold font */
     font-family: "Work Sans";
-    src: url(fonts/static/WorkSans-Bold.ttf) format("ttf");
+    src: url(fonts/static/WorkSans-Bold.ttf) format("truetype");
     font-weight: bold;
 }
 
 @font-face {
     /* italic font */
     font-family: "Work Sans";
-    src: url(fonts/static/WorkSans-Italic.ttf) format("ttf");
+    src: url(fonts/static/WorkSans-Italic.ttf) format("truetype");
     font-style: italic;
 }
 
 @font-face {
     /* italic and bold font */
     font-family: "Work Sans";
-    src: url(fonts/static/WorkSans-BoldItalic.ttf) format("ttf");
+    src: url(fonts/static/WorkSans-BoldItalic.ttf) format("truetype");
     font-style: italic;
     font-weight: bold;
 }
