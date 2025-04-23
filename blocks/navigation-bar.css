@@ -1,20 +1,18 @@
 .navigation-bar {
-    width: 100%;
+  width: 100%;
 }
 
 .navigation-bar__list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    background: #006992;
-    justify-content: space-between;
-    /* equal to 10px when font is 16px */
-    padding: 0.625rem;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  background: #006992;
+  justify-content: space-evenly;
+  /* equal to 10px when font is 16px */
+  padding: 0.625rem;
 }
 
-.navigation-bar__list-item, .navigation-bar__nav-link {
-    color: #fff;
-    text-decoration: none;
+.navigation-bar__nav-link {
+  color: #fff;
+  text-decoration: none;
 }
-
-
