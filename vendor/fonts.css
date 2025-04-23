@@ -11,3 +11,18 @@
     src: url(fonts/static/WorkSans-Bold.ttf) format("ttf");
     font-weight: bold;
 }
+
+@font-face {
+    /* italic font */
+    font-family: "Work Sans";
+    src: url(fonts/static/WorkSans-Italic.ttf) format("ttf");
+    font-style: italic;
+}
+
+@font-face {
+    /* italic and bold font */
+    font-family: "Work Sans";
+    src: url(fonts/static/WorkSans-BoldItalic.ttf) format("ttf");
+    font-style: italic;
+    font-weight: bold;
+}
