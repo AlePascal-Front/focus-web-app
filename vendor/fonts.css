@@ -1,28 +1,22 @@
 @font-face {
-  /* regular font */
-  font-family: "Work Sans";
-  src: url(fonts/static/WorkSans-Regular.ttf) format("truetype");
+  /* for timer, we'll use Chewy font to give it a quirky feeling */
+  font-family: "Chewy", system-ui;
+  src: url(fonts/Chewy/Chewy-Regular.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-    /* bold font */
-    font-family: "Work Sans";
-    src: url(fonts/static/WorkSans-Bold.ttf) format("truetype");
-    font-weight: bold;
+    /* for anything related to other sections of the page; we'll use Fredoka One */
+    /* declaring regular style */
+    font-family: "Fredoka One", system-ui;
+    src: url(fonts/FredokaOne/static/Fredoka-Regular.ttf) format("truetype");
+    font-style: normal;
 }
 
 @font-face {
-    /* italic font */
+    /* Fredoka One, bold style */
     font-family: "Work Sans";
-    src: url(fonts/static/WorkSans-Italic.ttf) format("truetype");
-    font-style: italic;
-}
-
-@font-face {
-    /* italic and bold font */
-    font-family: "Work Sans";
-    src: url(fonts/static/WorkSans-BoldItalic.ttf) format("truetype");
-    font-style: italic;
+    src: url(fonts/FredokaOne/static/Fredoka_Condensed-Bold.ttf) format("truetype");
     font-weight: bold;
 }
