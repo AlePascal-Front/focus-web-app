@@ -1,39 +1,67 @@
 .navigation-bar {
   width: 100%;
   height: 10vh;
-  /* display: flex;
-  flex-direction: row; */
-  font-family: "";
+  font-family: "Fredoka", system-ui;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .navigation-bar__list {
-  /* display: flex; */
+  display: flex;
   list-style-type: none;
   margin: 0;
   background: #006992;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* equal to 10px when font is 16px */
   padding: 0.625rem;
+  align-items: center;
   height: 100%;
+}
+
+.navigation-bar__list-item {
+  color: #fff;
+  cursor: default;
+  transition: transform 1s;
+
+  & h1:first-of-type {
+    font-weight: bold;
+    font-size: 2.5rem;
+    border: #fff double 1px;
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.navigation-bar__page-title-overlay {
+  width: 100;
+  height: 100%;
+  background-image: linear-gradient(
+    0.25turn,
+    rgba(0, 105, 146, 0.8),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 179, 67, 0.7)
+  );
+  opacity: 0.9;
 }
 
 .navigation-bar__nav-link {
   color: #fff;
   text-decoration: none;
-  background-image: linear-gradient(#fff, #fff);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 1px;
-  transition: background-size 0.3s;
   padding: 5px;
+  transition: background-color 0.5s, color 0.5s, transform 1s;
+  border-radius: 10px;
 }
 
 /* we set not only when hovering but also when focusing an element, this helps
-so that keyboard nav users have the same underline animation */
+so that keyboard nav users have enchanced  accessibility */
 .navigation-bar__nav-link:hover,
 .navigation-bar__nav-link:focus {
   /* background-size: 100% 1px; */
-  background-color: #ffb343;
-  border-radius: 5px;
-  color: #000;
+  /* background-color: #ffb343; */
+  background-color: #e29f3a;
+  /* color: #000; */
+  transform: translate(20px, 20px);
+
+  & .navigation-bar__list-item:hover {
+    transform: translateY(-5px);
+  }
 }
