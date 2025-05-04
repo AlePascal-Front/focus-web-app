@@ -4,6 +4,7 @@
   font-family: "Fredoka", system-ui;
   font-size: 1.5rem;
   font-weight: 500;
+  box-shadow: 10px 10px 10px 12px #000;
 }
 
 .navigation-bar__list {
@@ -32,7 +33,7 @@
 }
 
 .navigation-bar__page-title-overlay {
-  width: 100;
+  width: 100%;
   height: 100%;
   background-image: linear-gradient(
     0.25turn,
@@ -40,14 +41,13 @@
     rgba(255, 255, 255, 0.5),
     rgba(255, 179, 67, 0.7)
   );
-  opacity: 0.9;
 }
 
 .navigation-bar__nav-link {
   color: #fff;
   text-decoration: none;
   padding: 5px;
-  transition: background-color 0.5s, color 0.5s, transform 1s;
+  transition: background-color 0.5s, color 0.5s;
   border-radius: 10px;
 }
 
@@ -55,13 +55,9 @@
 so that keyboard nav users have enchanced  accessibility */
 .navigation-bar__nav-link:hover,
 .navigation-bar__nav-link:focus {
-  /* background-size: 100% 1px; */
-  /* background-color: #ffb343; */
   background-color: #e29f3a;
-  /* color: #000; */
   transform: translate(20px, 20px);
-
-  & .navigation-bar__list-item:hover {
-    transform: translateY(-5px);
-  }
 }
+
+/* TODO 
+    ADD MEDIA QUERIES */
