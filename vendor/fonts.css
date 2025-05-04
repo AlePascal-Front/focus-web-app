@@ -1,6 +1,6 @@
 @font-face {
   /* for timer, we'll use Chewy font to give it a quirky feeling */
-  font-family: "Chewy", system-ui;
+  font-family: "Chewy";
   src: url(./fonts/Chewy/Chewy-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -9,14 +9,14 @@
 @font-face {
     /* for anything related to other sections of the page; we'll use Fredoka */
     /* declaring regular style */
-    font-family: "Fredoka", system-ui;
-    src: url(./fonts/FredokaOne/static/Fredoka-Regular.ttf) format("truetype");
+    font-family: "Fredoka";
+    src: url(./fonts/Fredoka/static/Fredoka-Regular.ttf) format("truetype");
     font-style: normal;
 }
 
 @font-face {
     /* Fredoka, bold style */
-    font-family: "Work Sans";
-    src: url(fonts/FredokaOne/static/Fredoka_Condensed-Bold.ttf) format("truetype");
+    font-family: "Fredoka";
+    src: url(./fonts/Fredoka/static/Fredoka_Condensed-Bold.ttf) format("truetype");
     font-weight: bold;
 }
