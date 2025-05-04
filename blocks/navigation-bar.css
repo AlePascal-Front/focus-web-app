@@ -56,7 +56,6 @@ so that keyboard nav users have enchanced  accessibility */
 .navigation-bar__nav-link:hover,
 .navigation-bar__nav-link:focus {
   background-color: #e29f3a;
-  transform: translate(20px, 20px);
 }
 
 /* TODO 
