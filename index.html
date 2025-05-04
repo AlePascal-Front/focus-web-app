@@ -13,7 +13,9 @@
         <nav class="navigation-bar">
           <ul class="navigation-bar__list">
             <li class="navigation-bar__list-item">
-              <img src="#" alt="some logo here" class="navigation-bar__logo" />
+              <div class="navigation-bar__page-title-overlay">
+                <h1>ZenSession</h1>
+              </div>
             </li>
               <!-- main page when first visiting. No need to be logged -->
             <li class="navigation-bar__list-item">
@@ -52,46 +54,55 @@
             </li>
           </ul>
         </nav>
-        <header class="header">
-          <div class="header__content">
-            <!-- header positioned at top of the page, horizontally at the center -->
-            <h1 class="header__title">Running meaningful pomodoro sessions was never this easy.</h1>
-            <p class="header__slogan">
-              Running meaningful focus sessions was never this easy.
-            </p>
-            <div class="timer">
-              <!-- reminder to make use of pseudo-elements through before and after to create arrow buttons -->
-              <!-- whether the user surpass a full hour, create a div to wrap hours -->
+        <header class="timer">
+          <!-- title positioned at top of the page, horizontally at the center -->
+          <h1 class="timer__title">Running <span class="timer__title_underlined">Meaningful</span> Pomodoro 
+            Sessions Was Never This Easy</h1>
+          <div class="timer__timer-container">
+            <div class="timer__time-display">
               <div class="timer__minutes">
-                <!-- minutes here. Make use of Date object -->
+                <p>25:00</p>
               </div>
-              <div class="timer__seconds">
-                <!-- seconds here. Make use of Date object -->
-              </div>
+            </div>            <!-- header positioned at top of the page, horizontally at the center -->
+            <!-- reminder to make use of pseudo-elements through before and after to create arrow buttons -->
+            <!-- whether the user surpass a full hour, create a div to wrap hours -->
+            <div class="timer__minutes">
+              
+            <!-- minutes here. Make use of Date object -->
+            </div>
+            <div class="timer__seconds">
+            <!-- seconds here. Make use of Date object -->
+            </div>
 
-              <!-- if timer is empty (mm and ss equal to 0) then disable button -->
-              <button class="timer__start-button">START TIMER</button>
 
-              <!-- have the instructions be hidden and just have the heading be visibible -->
-              <!-- dinamically change text to "How to use the timer..." -->
-              <h2 class="timer__instructions-heading">
-                Click me to know how to use the timer!
-              </h2>
-              <ol class="timer__instructions-list">
-                <li class="timer__instruction">
-                  Type the desired time with the keyboard or use the arrow
-                  buttons.
-                </li>
-                <li class="timer__instruction">
-                  Click "START TIMER" to start the session.
-                </li>
-                <li class="timer__instruction">
-                  Whenever needed, you can add +5 minutes during session.
-                </li>
-              </ol>
+            <div class="timer__buttons">
+              <button class="timer__start-button">START</button>
+              <button class="timer__stop-button">STOP</button>
+            </div>
+            <!-- if timer is empty (mm and ss equal to 0) then disable button -->
+
+            <!-- have the instructions be hidden and just have the heading be visibible -->
+            <!-- dinamically change text to "How to use the timer..." -->
             </div>
           </div>
         </header>
+        <section class="additional-info">
+          <h2 class="additional-info__instruction-title">
+            Click me to know how to use the timer!
+          </h2>
+          <ol class="additional-info__instruction-list">
+            <li class="additional-info__instruction-list-item">
+              Type the desired time with the keyboard or use the arrow
+              buttons.
+            </li>
+            <li class="additional-info__instruction-list-item">
+              Click "START TIMER" to start the session.
+            </li>
+            <li class="additional-info__instruction-list-item">
+              Whenever needed, you can add +5 minutes during session.
+            </li>
+          </ol>
+        </section>
         <footer class="footer">
           <div class="footer__circle"><!-- circle filled with blue --></div>
           <div class="footer__content">
