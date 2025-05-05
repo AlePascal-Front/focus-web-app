@@ -5,16 +5,11 @@ let intervalId;
 const startButton = document.getElementById("start-button");
 const stopButton = document.getElementById("stop-button");
 const divContainerTimer = document.getElementsByClassName("timer__minutes");
-console.log(divContainerTimer[0].firstElementChild.textContent)
-console.log(divContainerTimer[0].lastElementChild)
 
 const updateTime = () => {
     
     minutes = parseInt(minutes.slice(0, 2));
     seconds = parseInt(seconds.slice(0, 2));
-
-    console.log(`minutes before comparison: ${minutes}`)
-    console.log(`seconds before comparison: ${seconds}`)
 
     if(isTimerOn) {
         if(seconds > 0 && seconds <= 10) {
@@ -32,10 +27,7 @@ const updateTime = () => {
             seconds = 59;
         }
     }
-    console.log(`minutes: ${minutes}`)
-    console.log(`seconds: ${seconds}`)
     // set up the new text content in the document
-
     minutes = String(minutes);
     seconds = String(seconds);
     const sep = ":";
